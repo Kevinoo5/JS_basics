@@ -1,20 +1,22 @@
-const num1 = 100
-const num2 = 50
-let result
-result = num1 + num2
-result = num1 - num2
-result = num1 * num2
-result = num1 / num2
-result = num1 % num2
+const firstname = "Kevin"
+const surname = "Noormets"
+const email = "kevin.noormets@voco.ee"
+const department = "IKT"
 
-result = Math.PI
-result = Math.round(2.5)
-result = Math.ceil(2.3)
-result = Math.floor(2.8)
-result = Math.sqrt(64)
-result = Math.abs(-3)
-result = Math.pow(8,2)
+let result = "<ul>" +
+    "<li>" + firstname + "</li>" +
+    "<li>" + surname + "</li>" +
+    "<li>" + email + "</li>" +
+    "<li>" + department + "</li>" +
+    "</ul>"
 
-result = Math.round(Math.random() * 10)
+result =
+    <ul>
+        <li><b>Name:</b>${firstname}</li>
+        <li><b>Name:</b>${surname}</li>
+        <li><b>Name:</b>${email}</li>
+        <li><b>Name:</b>${department}</li>
+    </ul>
 
 console.log(result)
+document.body.innerHTML = result
