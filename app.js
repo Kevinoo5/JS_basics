@@ -1,54 +1,20 @@
-// Strings
-let name = "Kevin Noormets"
-console.log(name)
-console.log(typeof name)
+const num1 = 100
+const num2 = 50
+let result
+result = num1 + num2
+result = num1 - num2
+result = num1 * num2
+result = num1 / num2
+result = num1 % num2
 
-let goodMark = 5
-console.log(goodMark)
-console.log(typeof goodMark)
+result = Math.PI
+result = Math.round(2.5)
+result = Math.ceil(2.3)
+result = Math.floor(2.8)
+result = Math.sqrt(64)
+result = Math.abs(-3)
+result = Math.pow(8,2)
 
-let percent = 50.3
-console.log(percent)
-console.log(typeof percent)
+result = Math.round(Math.random() * 10)
 
-let isHere = true // false
-console.log(isHere)
-console.log(typeof isHere)
-
-// const
-
-const surname = "Noormets"
-// surname = "Eeee" - error
-
-// arrays
-
-const numbers = [1,2,3,4,5]
-console.log(numbers)
-numbers.push(6)
-console.log(typeof numbers)
-
-// objects
-const person = {
-    firstname: "Kevin",
-    surname: "Noormets"
-}
-console.log(person)
-console.log(person.firstname)
-console.log(person.surname)
-person.department = "IKT"
-console.log(typeof person)
-
-// Null
-const Airplane = null
-console.log(Airplane)
-console.log(typeof Airplane)
-
-// Symbol
-const symbol = Symbol()
-console.log(symbol)
-console.log(typeof symbol)
-
-// undefined
-let test
-console.log(test)
-console.log(typeof test)
+console.log(result)
