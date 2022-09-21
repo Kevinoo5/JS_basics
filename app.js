@@ -10,13 +10,13 @@ let result = "<ul>" +
     "<li>" + department + "</li>" +
     "</ul>"
 
-result =
+result =`
     <ul>
         <li><b>Name:</b>${firstname}</li>
         <li><b>Name:</b>${surname}</li>
         <li><b>Name:</b>${email}</li>
         <li><b>Name:</b>${department}</li>
-    </ul>
+    </ul>`
 
 console.log(result)
 document.body.innerHTML = result
