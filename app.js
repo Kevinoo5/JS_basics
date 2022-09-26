@@ -1,36 +1,39 @@
-console.log("For loop")
-for (let i = 0; i < 10; i++){
-    if (i === 5) {
-        break
+function greeting(name) {
+    return `Hello, ${name}!`
+}
+
+//greeting("Kevin")
+
+//let greet = greeting("Kevin")
+//console.log(greet)
+
+// const square = function (number) {
+//    return number * number
+//}
+
+// let result = square(3)
+// console.log(result)
+
+(function () {
+    console.log("Function is running")
+})();
+
+(function (name) {
+    console.log(`Hello ${name}!`)
+})("Kevin");
+
+const todo = {
+    add: function (){
+        console.log("Add todo....")
+    },
+    edit: function (){
+        console.log("Edit todo....")
+    },
+    delete: function (){
+        console.log("Delete todo....")
     }
-    console.log(i)
 }
 
-console.log("While loop")
-let number1 = 1;
-while (number1 < 10) {
-    console.log(number1)
-    number1++
-}
-
-console.log("Do-while loop")
-let number2 = 11;
-do {
-    console.log(number2)
-    number2++
-} while (number2 < 10)
-
-const cars = ["Audi", "Tesla", "BMW"]
-cars.forEach((car) => {
-    console.log(car)
-})
-
-const person = {
-    firstname: "Kadi",
-    lastname: "Tamm",
-    age: 40
-}
-
-for (let personKey in person) {
-    console.log(person[personKey])
-}
+todo.add()
+todo.delete()
+todo.edit()
